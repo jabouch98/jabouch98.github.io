@@ -1,0 +1,48 @@
+/* CSS for bootstrap*/
+/*
+Black: #394648
+Orange: #EF946C
+White: #FCFAF9
+Brown: #CBAC88
+Pink: #EDB6A3
+*/
+
+body{
+	background: #FCFAF9;
+}
+
+h1{
+	margin-top: 64px;
+	margin-bottom: 24px;
+	text-align: center;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+nav{
+	margin-bottom: 24px;
+}
+
+.container-fluid{
+	max-width: 1800px;
+}
+
+.container-fluid a:link{
+	color: #FCFAF9;
+}
+
+#secondNav a:link{
+	color: #394648;
+	font-size: 24px;
+}
+
+/*Styling for the news stories*/
+.demo-content{
+	min-height: 400px;
+}
+
+.demo-content p{
+	color: #394648;
+	font-size: 22px;
+	text-align: center;
+	padding: 100px;
+}

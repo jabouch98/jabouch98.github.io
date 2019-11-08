@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Form </title>
+		<link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="castle.css">
+	</head>
+	<body>
+		<section class="top">
+			<section class="title">
+				<h1> Suggestion Form </h1>
+			</section>
+			<section class="links">
+				<div class="navbar">
+					<a href="index.html"> <img src="/castles/images/home1.png" alt="home"></a>
+					<div class="dropdown">
+						<img src="/castles/images/countries.png" alt="countries">
+						<div class="content">
+							<a href="england.html"> England</a>
+							<a href="france.html"> France</a>
+							<a href="germany.html"> Germany</a>
+						</div>
+					</div>
+					<a href="form.html"> <img src="/castles/images/form.png" alt="form"></a>
+				</div>
+			</section>
+		</section>
+		<form action="mailto:jabouch98@my.uri.edu" method="POST" enctype="text/plain" name="SuggestionForm">
+		    <script src="formVal.js"></script>
+			<fieldset class="personal">
+				<label for="fname">
+					First Name
+					<input type="text" name="fname" id="fname">
+				</label>
+				<label for="lname">
+					Last Name
+					<input type="text" name="lname" id="lname">
+				</label>
+				<label for="email">
+				    <span>Email</span>
+					<input type="email" name="email" id="email">
+					<span class="error" aria-live="polite"></span>
+				</label>
+			</fieldset>
+			<fieldset class="suggestion">
+				<label for="country">
+					Please select a Country you would like to see on this site!
+					<select name="country" id="country">
+						<option value="Austria" selected>Austria</option>
+						<option value="Belgium">Belgium</option>
+						<option value="Ireland">Ireland</option>
+						<option value="Italy">Italy</option>
+						<option value="Spain">Spain</option>
+					</select>
+				</label>
+				<label for="castle">
+					What castle would you like to know more about?
+					<select name="castle" id="castle">
+						<option value="Bolsover" selected>Bolsover</option>
+						<option value="Angers">Chateau d'Angers</option>
+						<option value="Bonaguil">Chateau de Bonaguil</option>
+						<option value="Chenonceau">Chateau de Chenonceau</option>
+						<option value="Dover">Dover Castle</option>
+						<option value="Hohenzollern">Hohenzollern Castle</option>
+						<option value="Kenilworth">Kenilworth Castle</option>
+						<option value="Neuschwanstein"> Neuschwanstein Castle</option>
+						<option value="Schwerin"> Schwerin Castle</option>
+					</select>
+				</label>
+			</fieldset>
+			<input type="submit" value="Email this form">
+		</form>
+	</body>
+</html>
